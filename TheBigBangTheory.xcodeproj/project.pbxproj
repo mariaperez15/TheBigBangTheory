@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCAD44E62CED481E001599A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAD44E02CED481E001599A7 /* Preview Assets.xcassets */; };
+		FCAD44E72CED481E001599A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAD44E22CED481E001599A7 /* Assets.xcassets */; };
+		FCAD44E92CED481E001599A7 /* TheBigBangTheoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44E42CED481E001599A7 /* TheBigBangTheoryApp.swift */; };
+		FCAD44F22CED499A001599A7 /* BigBang.json in Resources */ = {isa = PBXBuildFile; fileRef = FCAD44F02CED499A001599A7 /* BigBang.json */; };
+		FCAD44F32CED499A001599A7 /* BigBangTest.json in Resources */ = {isa = PBXBuildFile; fileRef = FCAD44F12CED499A001599A7 /* BigBangTest.json */; };
+		FCAD44F52CED49E8001599A7 /* BigBangTheoryModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44F42CED49E8001599A7 /* BigBangTheoryModelDTO.swift */; };
+		FCAD44F72CED4AE3001599A7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44F62CED4ABC001599A7 /* Repository.swift */; };
+		FCAD44F92CED5026001599A7 /* BigBangTheoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44F82CED5026001599A7 /* BigBangTheoryVM.swift */; };
+		FCAD44FB2CEDDD98001599A7 /* BigBangCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */; };
+		FCAD44FD2CEDE1B2001599A7 /* BigBangDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44FC2CEDE1B2001599A7 /* BigBangDetailView.swift */; };
+		FCAD45012CEE09E9001599A7 /* EpisodesbySeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD45002CEE09E9001599A7 /* EpisodesbySeasonView.swift */; };
+		FCC3054A2CFBC83600821AEF /* FavoritesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC305492CFBC83600821AEF /* FavoritesCellView.swift */; };
+		FCC4BB9A2CF1E2CF002A4257 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BB992CF1E2CF002A4257 /* SwiftUIView.swift */; };
+		FCC4BBD12CF602AB002A4257 /* SeasonsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBD02CF602AB002A4257 /* SeasonsGridView.swift */; };
+		FCC4BBE12CF7A3B7002A4257 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBE02CF7A3B7002A4257 /* HomeTabView.swift */; };
+		FCC4BBE32CF7BC36002A4257 /* BigBangTheoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBE22CF7BC36002A4257 /* BigBangTheoryModel.swift */; };
+		FCC4BBE92CFB1C80002A4257 /* DetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBE82CFB1C7B002A4257 /* DetailVM.swift */; };
+		FCC4BBED2CFB2020002A4257 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBEC2CFB2020002A4257 /* PreviewData.swift */; };
+		FCC4BBEF2CFB419D002A4257 /* EpisodesFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBEE2CFB419D002A4257 /* EpisodesFavoritesView.swift */; };
+		FCC4BBF22CFB4AD3002A4257 /* FavoritesSwipeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBF12CFB4AD3002A4257 /* FavoritesSwipeModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FCAD44CF2CEBF48A001599A7 /* TheBigBangTheory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBigBangTheory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAD44E02CED481E001599A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCAD44E22CED481E001599A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAD44E42CED481E001599A7 /* TheBigBangTheoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheBigBangTheoryApp.swift; sourceTree = "<group>"; };
+		FCAD44F02CED499A001599A7 /* BigBang.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBang.json; sourceTree = "<group>"; };
+		FCAD44F12CED499A001599A7 /* BigBangTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BigBangTest.json; sourceTree = "<group>"; };
+		FCAD44F42CED49E8001599A7 /* BigBangTheoryModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryModelDTO.swift; sourceTree = "<group>"; };
+		FCAD44F62CED4ABC001599A7 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FCAD44F82CED5026001599A7 /* BigBangTheoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryVM.swift; sourceTree = "<group>"; };
+		FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangCellView.swift; sourceTree = "<group>"; };
+		FCAD44FC2CEDE1B2001599A7 /* BigBangDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangDetailView.swift; sourceTree = "<group>"; };
+		FCAD45002CEE09E9001599A7 /* EpisodesbySeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesbySeasonView.swift; sourceTree = "<group>"; };
+		FCC305492CFBC83600821AEF /* FavoritesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCellView.swift; sourceTree = "<group>"; };
+		FCC4BB992CF1E2CF002A4257 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		FCC4BBD02CF602AB002A4257 /* SeasonsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsGridView.swift; sourceTree = "<group>"; };
+		FCC4BBE02CF7A3B7002A4257 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		FCC4BBE22CF7BC36002A4257 /* BigBangTheoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangTheoryModel.swift; sourceTree = "<group>"; };
+		FCC4BBE82CFB1C7B002A4257 /* DetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVM.swift; sourceTree = "<group>"; };
+		FCC4BBEC2CFB2020002A4257 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		FCC4BBEE2CFB419D002A4257 /* EpisodesFavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesFavoritesView.swift; sourceTree = "<group>"; };
+		FCC4BBF12CFB4AD3002A4257 /* FavoritesSwipeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSwipeModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCAD44CC2CEBF48A001599A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCAD44C62CEBF48A001599A7 = {
+			isa = PBXGroup;
+			children = (
+				FCAD44E52CED481E001599A7 /* TheBigBangTheory */,
+				FCAD44D02CEBF48A001599A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCAD44D02CEBF48A001599A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44CF2CEBF48A001599A7 /* TheBigBangTheory.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCAD44E12CED481E001599A7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44E02CED481E001599A7 /* Preview Assets.xcassets */,
+				FCAD44F12CED499A001599A7 /* BigBangTest.json */,
+				FCC4BBEC2CFB2020002A4257 /* PreviewData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCAD44E52CED481E001599A7 /* TheBigBangTheory */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44EF2CED4870001599A7 /* Views */,
+				FCAD44ED2CED484A001599A7 /* ViewModel */,
+				FCAD44EB2CED4835001599A7 /* Models */,
+				FCAD44EC2CED4840001599A7 /* Repository */,
+				FCAD44EE2CED485C001599A7 /* System */,
+				FCAD44EA2CED4826001599A7 /* Resources */,
+				FCAD44E12CED481E001599A7 /* Preview Content */,
+			);
+			path = TheBigBangTheory;
+			sourceTree = "<group>";
+		};
+		FCAD44EA2CED4826001599A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44F02CED499A001599A7 /* BigBang.json */,
+				FCAD44E22CED481E001599A7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCAD44EB2CED4835001599A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44F42CED49E8001599A7 /* BigBangTheoryModelDTO.swift */,
+				FCC4BBE22CF7BC36002A4257 /* BigBangTheoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCAD44EC2CED4840001599A7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44F62CED4ABC001599A7 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FCAD44ED2CED484A001599A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4BBE82CFB1C7B002A4257 /* DetailVM.swift */,
+				FCAD44F82CED5026001599A7 /* BigBangTheoryVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FCAD44EE2CED485C001599A7 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44E42CED481E001599A7 /* TheBigBangTheoryApp.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		FCAD44EF2CED4870001599A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4BBF02CFB4ABA002A4257 /* ViewModifiers */,
+				FCAD45022CEE4062001599A7 /* components */,
+				FCC4BBE02CF7A3B7002A4257 /* HomeTabView.swift */,
+				FCC4BBD02CF602AB002A4257 /* SeasonsGridView.swift */,
+				FCAD45002CEE09E9001599A7 /* EpisodesbySeasonView.swift */,
+				FCAD44FC2CEDE1B2001599A7 /* BigBangDetailView.swift */,
+				FCC4BB992CF1E2CF002A4257 /* SwiftUIView.swift */,
+				FCC4BBEE2CFB419D002A4257 /* EpisodesFavoritesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCAD45022CEE4062001599A7 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */,
+				FCC305492CFBC83600821AEF /* FavoritesCellView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		FCC4BBF02CFB4ABA002A4257 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FCC4BBF12CFB4AD3002A4257 /* FavoritesSwipeModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCAD44CE2CEBF48A001599A7 /* TheBigBangTheory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAD44DD2CEBF48C001599A7 /* Build configuration list for PBXNativeTarget "TheBigBangTheory" */;
+			buildPhases = (
+				FCAD44CB2CEBF48A001599A7 /* Sources */,
+				FCAD44CC2CEBF48A001599A7 /* Frameworks */,
+				FCAD44CD2CEBF48A001599A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheBigBangTheory;
+			packageProductDependencies = (
+			);
+			productName = TheBigBangTheory;
+			productReference = FCAD44CF2CEBF48A001599A7 /* TheBigBangTheory.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCAD44C72CEBF48A001599A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					FCAD44CE2CEBF48A001599A7 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = FCAD44CA2CEBF48A001599A7 /* Build configuration list for PBXProject "TheBigBangTheory" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCAD44C62CEBF48A001599A7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FCAD44D02CEBF48A001599A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCAD44CE2CEBF48A001599A7 /* TheBigBangTheory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCAD44CD2CEBF48A001599A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAD44F22CED499A001599A7 /* BigBang.json in Resources */,
+				FCAD44F32CED499A001599A7 /* BigBangTest.json in Resources */,
+				FCAD44E62CED481E001599A7 /* Preview Assets.xcassets in Resources */,
+				FCAD44E72CED481E001599A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCAD44CB2CEBF48A001599A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC3054A2CFBC83600821AEF /* FavoritesCellView.swift in Sources */,
+				FCAD44F92CED5026001599A7 /* BigBangTheoryVM.swift in Sources */,
+				FCC4BBE32CF7BC36002A4257 /* BigBangTheoryModel.swift in Sources */,
+				FCC4BB9A2CF1E2CF002A4257 /* SwiftUIView.swift in Sources */,
+				FCC4BBD12CF602AB002A4257 /* SeasonsGridView.swift in Sources */,
+				FCC4BBED2CFB2020002A4257 /* PreviewData.swift in Sources */,
+				FCAD44F52CED49E8001599A7 /* BigBangTheoryModelDTO.swift in Sources */,
+				FCAD44FD2CEDE1B2001599A7 /* BigBangDetailView.swift in Sources */,
+				FCAD44FB2CEDDD98001599A7 /* BigBangCellView.swift in Sources */,
+				FCC4BBF22CFB4AD3002A4257 /* FavoritesSwipeModifier.swift in Sources */,
+				FCC4BBEF2CFB419D002A4257 /* EpisodesFavoritesView.swift in Sources */,
+				FCC4BBE92CFB1C80002A4257 /* DetailVM.swift in Sources */,
+				FCC4BBE12CF7A3B7002A4257 /* HomeTabView.swift in Sources */,
+				FCAD44E92CED481E001599A7 /* TheBigBangTheoryApp.swift in Sources */,
+				FCAD44F72CED4AE3001599A7 /* Repository.swift in Sources */,
+				FCAD45012CEE09E9001599A7 /* EpisodesbySeasonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCAD44DB2CEBF48C001599A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCAD44DC2CEBF48C001599A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCAD44DE2CEBF48C001599A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TheBigBangTheory/Preview Content\"";
+				DEVELOPMENT_TEAM = RTP3BVY32M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariaperez.TheBigBangTheory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCAD44DF2CEBF48C001599A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TheBigBangTheory/Preview Content\"";
+				DEVELOPMENT_TEAM = RTP3BVY32M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariaperez.TheBigBangTheory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCAD44CA2CEBF48A001599A7 /* Build configuration list for PBXProject "TheBigBangTheory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAD44DB2CEBF48C001599A7 /* Debug */,
+				FCAD44DC2CEBF48C001599A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAD44DD2CEBF48C001599A7 /* Build configuration list for PBXNativeTarget "TheBigBangTheory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAD44DE2CEBF48C001599A7 /* Debug */,
+				FCAD44DF2CEBF48C001599A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCAD44C72CEBF48A001599A7 /* Project object */;
+}
