@@ -23,6 +23,11 @@ struct HomeTabView: View {
                 Image(systemName: "star")
                     
             }
+            Tab {
+                ViewedEpisodesView()
+            } label: {
+                Image(systemName: "eye")
+            }
 
 
         }

@@ -32,7 +32,7 @@ struct Repository: RepositoryProtocol {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         let data = try encoder.encode(data)
-        //print(savedURL)
+        print(savedURL)
         try data.write(to: savedURL, options: [.atomic, .completeFileProtection])
     }
 }

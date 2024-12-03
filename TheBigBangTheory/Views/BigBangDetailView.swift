@@ -18,6 +18,25 @@ struct BigBangDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .padding(.bottom)
+                
+                HStack{
+                    Button {
+                        vm.markAsViewed(episode: episode)
+                        episode.isViewed.toggle()
+                    } label: {
+                        Image(systemName: episode.isViewed ? "eye.fill" : "eye.slash.fill")
+                            .foregroundStyle(episode.isViewed ? .blue : .gray)
+                    }
+                    .padding(.trailing, 200)
+                    Button {
+                        vm.markAsFavorite(episode: episode)
+                        episode.isFavorite.toggle()
+                    } label: {
+                        Image(systemName: episode.isFavorite ? "star.fill" : "star")
+                            .foregroundColor(episode.isFavorite ? .yellow : .gray)
+                    }
+                }
+                
                 VStack {
                     Text(episode.name)
                         .bold()
@@ -29,14 +48,6 @@ struct BigBangDetailView: View {
                     }
                 }
                 .padding()
-                
-                Button {
-                    vm.markAsFavorite(episode: episode)
-                    episode.isFavorite.toggle()
-                } label: {
-                    Image(systemName: episode.isFavorite ? "star.fill" : "star")
-                        .foregroundColor(episode.isFavorite ? .yellow : .gray)
-                }
             }
         }
     }

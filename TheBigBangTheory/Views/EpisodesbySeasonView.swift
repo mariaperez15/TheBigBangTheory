@@ -16,7 +16,8 @@ struct EpisodesbySeasonView: View {
             NavigationLink(value: episode) {
                 BigBangCellView(episode: episode)
             }
-            .favoriteSwipe(episode: episode)            
+            .favoriteSwipe(episode: episode)
+            .viewedSwipeModifiers(episode: episode)
         }
         .navigationTitle("Season \(selectedSeason)")
     }

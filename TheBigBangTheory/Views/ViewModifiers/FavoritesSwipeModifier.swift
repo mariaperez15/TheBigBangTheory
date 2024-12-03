@@ -14,13 +14,13 @@ struct FavoritesSwipeModifiers: ViewModifier {
     func body(content: Content) -> some View {
         content
             .swipeActions {
-            Button {
-                vm.markAsFavorite(episode: episode)
-            } label: {
-                Image(systemName: episode.isFavorite ? "star.fill" : "star")
+                Button {
+                    vm.markAsFavorite(episode: episode)
+                } label: {
+                    Image(systemName: episode.isFavorite ? "star.fill" : "star")
+                }
+                .tint(episode.isFavorite ? .yellow : .gray)
             }
-            .tint(episode.isFavorite ? .yellow : .gray)
-        }
     }
 }
 

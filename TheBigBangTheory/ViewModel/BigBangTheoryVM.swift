@@ -24,16 +24,14 @@ final class BigBangTheoryVM: ObservableObject {
     }
     
     @Published var searchedText: String = ""
-    //@Published var searchedEpisodes: [BigBangTheoryModel] = []
+    @Published var searchedEpisodes: [BigBangTheoryModel] = []
     @Published var firstView: FirstView = .loading
     
     var searchedResults: [BigBangTheoryModel] {
         episodes.filter { episode in
             if searchedText.isEmpty {
-                firstView = .season
                 return true
             } else {
-                firstView = .episodes
                 return episode.name.localizedCaseInsensitiveContains(searchedText)
             }
         }
@@ -43,8 +41,12 @@ final class BigBangTheoryVM: ObservableObject {
     var episodesFavorites: [BigBangTheoryModel] {
         episodes.filter { $0.isFavorite }
     }
+    
+    var episodesViewed: [BigBangTheoryModel] {
+        episodes.filter { $0.isViewed}
+    }
             
-    var seasons: [Int] {
+    var seasonsV2: [Int] {
         var seasons: [Int] = []
         episodes.forEach { episode in
             seasons.append(episode.season)
@@ -54,7 +56,7 @@ final class BigBangTheoryVM: ObservableObject {
     
     
     //Esto es mejor
-    var seasonsV2: [Int] {
+    var seasons: [Int] {
         Set(episodes.map(\.season)).sorted() //TODO: duda keypath, equivale a :
         /*
          episodes.map { episode in episode.season } = episodes.map(\.season)
@@ -95,15 +97,19 @@ final class BigBangTheoryVM: ObservableObject {
         if let index = episodes.firstIndex(where: { chapter in
             chapter.id == episode.id }) {
             episodes[index].isFavorite.toggle()
-            print("Marcado como fav")
+        }
+    }
+    
+    func markAsViewed(episode: BigBangTheoryModel) {
+        if let index = episodes.firstIndex(where: { chapter in
+            chapter.id == episode.id }) {
+            episodes[index].isViewed.toggle()
         }
     }
     
     func searchEpisodeByName() {
-        episodes.removeAll()
-        episodes = episodes.filter { $0.name.localizedStandardContains(searchedText)}
+        searchedEpisodes = episodes.filter { $0.name.localizedStandardContains(searchedText)}
         firstView = searchedText.isEmpty ? .season : .episodes
-        
     }
 }
 

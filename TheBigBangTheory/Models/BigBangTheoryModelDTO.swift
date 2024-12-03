@@ -29,7 +29,8 @@ struct BigBangTheoryModelDTO: Codable, Identifiable, Hashable {
             runtime: runtime,
             image: image,
             summary: summary,
-            isFavorite: false
+            isFavorite: false,
+            isViewed: false
         )
     }
 }

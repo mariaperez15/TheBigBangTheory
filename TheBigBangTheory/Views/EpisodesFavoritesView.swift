@@ -30,7 +30,8 @@ struct EpisodesFavoritesView: View {
             NavigationLink(value: episode) {
                 FavoritesCellView(episode: episode)
                     .favoriteSwipe(episode: episode)
-                    //.modifier(FavoritesSwipeModifiers(episode: episode))
+                //.modifier(FavoritesSwipeModifiers(episode: episode))
+                    .viewedSwipeModifiers(episode: episode)
             }
         }
     }

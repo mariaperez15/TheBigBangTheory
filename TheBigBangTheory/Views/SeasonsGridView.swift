@@ -22,15 +22,18 @@ struct SeasonsGridView: View {
                 case .loading:
                     ProgressView()
                 case .episodes:
-                    searchedEpidodes()
+                    searchedEpidodes
                 case .season:
-                    seasonsGrid()
+                    seasonsGrid
                 }
+                //ContentUnavailableView utilizarlo para que cuando no encuentre nada que coincida con la busqueda
             }
             .searchable(text: $vm.searchedText , prompt: "Search season by title")
             .onChange(of: vm.searchedText) {
-                Task {
-                    //vm.searchEpisodeByName()
+                if vm.searchedText.isEmpty {
+                    vm.firstView = .season
+                } else {
+                    vm.firstView = .episodes
                 }
             }
             .navigationTitle("Seasons")
@@ -43,7 +46,7 @@ struct SeasonsGridView: View {
         }
     }
     
-    func seasonsGrid() -> some View {
+    var seasonsGrid: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 ForEach(vm.seasons, id: \.self) { season in
@@ -60,12 +63,11 @@ struct SeasonsGridView: View {
         }
     }
     
-    func searchedEpidodes() -> some View {
-        List(vm.episodes) { episode in
+    var searchedEpidodes: some View {
+        List(vm.searchedResults) { episode in
             NavigationLink(value: episode) {
                 BigBangCellView(episode: episode)
             }
-            //Añadir el añadir a favoritos
             .favoriteSwipe(episode: episode)
         }
     }

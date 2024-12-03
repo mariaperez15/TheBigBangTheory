@@ -18,6 +18,9 @@
 		FCAD44FB2CEDDD98001599A7 /* BigBangCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */; };
 		FCAD44FD2CEDE1B2001599A7 /* BigBangDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD44FC2CEDE1B2001599A7 /* BigBangDetailView.swift */; };
 		FCAD45012CEE09E9001599A7 /* EpisodesbySeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAD45002CEE09E9001599A7 /* EpisodesbySeasonView.swift */; };
+		FCB10F502CFFA9FC00BD7AE0 /* ViewedSwipeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB10F4F2CFFA9FC00BD7AE0 /* ViewedSwipeModifier.swift */; };
+		FCB10F522CFFABF000BD7AE0 /* ViewedEpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB10F512CFFABF000BD7AE0 /* ViewedEpisodesView.swift */; };
+		FCB10F542CFFAF9A00BD7AE0 /* ViewedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB10F532CFFAF9A00BD7AE0 /* ViewedCellView.swift */; };
 		FCC3054A2CFBC83600821AEF /* FavoritesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC305492CFBC83600821AEF /* FavoritesCellView.swift */; };
 		FCC4BB9A2CF1E2CF002A4257 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BB992CF1E2CF002A4257 /* SwiftUIView.swift */; };
 		FCC4BBD12CF602AB002A4257 /* SeasonsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBD02CF602AB002A4257 /* SeasonsGridView.swift */; };
@@ -42,6 +45,9 @@
 		FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangCellView.swift; sourceTree = "<group>"; };
 		FCAD44FC2CEDE1B2001599A7 /* BigBangDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBangDetailView.swift; sourceTree = "<group>"; };
 		FCAD45002CEE09E9001599A7 /* EpisodesbySeasonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesbySeasonView.swift; sourceTree = "<group>"; };
+		FCB10F4F2CFFA9FC00BD7AE0 /* ViewedSwipeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedSwipeModifier.swift; sourceTree = "<group>"; };
+		FCB10F512CFFABF000BD7AE0 /* ViewedEpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedEpisodesView.swift; sourceTree = "<group>"; };
+		FCB10F532CFFAF9A00BD7AE0 /* ViewedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewedCellView.swift; sourceTree = "<group>"; };
 		FCC305492CFBC83600821AEF /* FavoritesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCellView.swift; sourceTree = "<group>"; };
 		FCC4BB992CF1E2CF002A4257 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		FCC4BBD02CF602AB002A4257 /* SeasonsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsGridView.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 				FCAD44FC2CEDE1B2001599A7 /* BigBangDetailView.swift */,
 				FCC4BB992CF1E2CF002A4257 /* SwiftUIView.swift */,
 				FCC4BBEE2CFB419D002A4257 /* EpisodesFavoritesView.swift */,
+				FCB10F512CFFABF000BD7AE0 /* ViewedEpisodesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 			children = (
 				FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */,
 				FCC305492CFBC83600821AEF /* FavoritesCellView.swift */,
+				FCB10F532CFFAF9A00BD7AE0 /* ViewedCellView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC4BBF12CFB4AD3002A4257 /* FavoritesSwipeModifier.swift */,
+				FCB10F4F2CFFA9FC00BD7AE0 /* ViewedSwipeModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -258,6 +267,9 @@
 				FCAD44F92CED5026001599A7 /* BigBangTheoryVM.swift in Sources */,
 				FCC4BBE32CF7BC36002A4257 /* BigBangTheoryModel.swift in Sources */,
 				FCC4BB9A2CF1E2CF002A4257 /* SwiftUIView.swift in Sources */,
+				FCB10F522CFFABF000BD7AE0 /* ViewedEpisodesView.swift in Sources */,
+				FCB10F502CFFA9FC00BD7AE0 /* ViewedSwipeModifier.swift in Sources */,
+				FCB10F542CFFAF9A00BD7AE0 /* ViewedCellView.swift in Sources */,
 				FCC4BBD12CF602AB002A4257 /* SeasonsGridView.swift in Sources */,
 				FCC4BBED2CFB2020002A4257 /* PreviewData.swift in Sources */,
 				FCAD44F52CED49E8001599A7 /* BigBangTheoryModelDTO.swift in Sources */,

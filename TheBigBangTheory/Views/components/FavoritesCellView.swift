@@ -29,4 +29,5 @@ struct FavoritesCellView: View {
 }
 
 #Preview {
-    FavoritesCellView(episode: .previewEpisode)}
+    FavoritesCellView(episode: .previewEpisode)
+}

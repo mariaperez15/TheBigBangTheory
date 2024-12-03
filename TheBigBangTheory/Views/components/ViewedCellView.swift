@@ -1,15 +1,14 @@
 //
-//  BigBangCellView.swift
+//  ViewedCellView.swift
 //  TheBigBangTheory
 //
-//  Created by María Pérez  on 20/11/24.
+//  Created by María Pérez  on 3/12/24.
 //
 
 import SwiftUI
 
-struct BigBangCellView: View {
+struct ViewedCellView: View {
     let episode: BigBangTheoryModel
-    
     
     var body: some View {
         HStack {
@@ -24,12 +23,12 @@ struct BigBangCellView: View {
                 .resizable() //esto incluso si no hace falta porque la imagen ya viene con el tamaño que necesitamos, hace falta?
                 .scaledToFit()
                 .frame(width: 150)
-            Image(systemName: episode.isFavorite ? "star.fill" : "star")
-                .foregroundStyle(episode.isFavorite ? .yellow : .gray)
+            Image(systemName: episode.isViewed ? "eye.fill" : "eye.slash.fill")
+                .foregroundStyle(episode.isViewed ? .blue : .gray)
         }
     }
 }
 
 #Preview {
-    BigBangCellView(episode: .previewEpisode)
+    ViewedCellView(episode: .previewEpisode)
 }

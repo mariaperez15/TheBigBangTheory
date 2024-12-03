@@ -18,4 +18,5 @@ struct BigBangTheoryModel: Codable, Identifiable, Hashable {
     let image: String
     let summary: String
     var isFavorite: Bool
+    var isViewed: Bool
 }
