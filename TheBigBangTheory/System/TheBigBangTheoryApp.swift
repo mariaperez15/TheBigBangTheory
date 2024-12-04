@@ -48,7 +48,7 @@ Set(array) -> devolverá 1,5,7 y el tipo de dato sera set
  4. Limpieza de código (detectar mejoras de codigo, simplificar lo repetido y eso)
  5. Mirar añadir splashScreen (pantalla de carga). (NO INFOPLIST!!!)
  6. PUNTUACION: mirar como crear swiftUI StarRating+
- 7. En el modelo tener un EpisodeRate, EpisodeNotes (hacer un cuadro de texto donde el usuario pueda escribir y que puedo le de a save se guarde. Agregar al modelo la propiedad episodeNotes de tipo string.
+
 
  
  */

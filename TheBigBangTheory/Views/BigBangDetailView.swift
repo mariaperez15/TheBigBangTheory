@@ -52,20 +52,16 @@ struct BigBangDetailView: View {
                         }
                     
                     HStack {
-                        if episode.episodeNotes.isEmpty {
+                        if episode.episodeNotes.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                             TextField("Añade comentarios sobre el episodio", text: $userComment)
                         } else {
                             TextField(episode.episodeNotes, text: $userComment)
-                        }
-                        
-                        Button {
-                            vm.saveComment(episode: episode, userNote: userComment)
-                        } label: {
-                            Image(systemName: "square.and.arrow.down")
-                        }
-                        
+                        }                        
                     }
                     .padding(.bottom)
+                    .onChange(of: userComment) {
+                        vm.saveComment(episode: episode, userNote: userComment)
+                    }
                     
                     Link(destination: episode.url) {
                         Text("+ info")

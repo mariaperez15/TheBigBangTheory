@@ -28,7 +28,7 @@ struct EpisodesFavoritesView: View {
     var favoritesList: some View {
         List(vm.episodesFavorites) { episode in
             NavigationLink(value: episode) {
-                FavoritesCellView(episode: episode)
+                BigBangCellView(episode: episode)
                     .favoriteSwipe(episode: episode)
                 //.modifier(FavoritesSwipeModifiers(episode: episode))
                     .viewedSwipeModifiers(episode: episode)

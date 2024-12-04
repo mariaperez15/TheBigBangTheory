@@ -22,13 +22,17 @@ struct SeasonsGridView: View {
                 case .loading:
                     ProgressView()
                 case .episodes:
-                    searchedEpidodes
+                    if vm.searchedEpisodes.isEmpty {
+                        ContentUnavailableView("No episodes found", systemImage: "text.page.badge.magnifyingglass", description: Text("No episodes found with name '\(vm.searchedText)'"))
+                    } else {
+                        searchedEpidodes
+                    }
                 case .season:
                     seasonsGrid
                 }
-                //ContentUnavailableView utilizarlo para que cuando no encuentre nada que coincida con la busqueda
+                //TODO: ContentUnavailableView utilizarlo para que cuando no encuentre nada que coincida con la busqueda
             }
-            .searchable(text: $vm.searchedText , prompt: "Search season by title")
+            .searchable(text: $vm.searchedText , prompt: "Search episode by title")
             .onChange(of: vm.searchedText) {
                 if vm.searchedText.isEmpty {
                     vm.firstView = .season
@@ -54,12 +58,13 @@ struct SeasonsGridView: View {
                         Image("season\(season)")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 195)
+                            .frame(width: 175)
                             .cornerRadius(6)
                             .shadow(radius: 4)
                     }
                 }
             }
+            .padding()
         }
     }
     

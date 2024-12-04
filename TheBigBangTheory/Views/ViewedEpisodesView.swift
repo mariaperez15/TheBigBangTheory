@@ -23,7 +23,7 @@ struct ViewedEpisodesView: View {
     var viewedList: some View {
         List(vm.episodesViewed) { episode in
             NavigationLink(value: episode) {
-                ViewedCellView(episode: episode)
+                BigBangCellView(episode: episode)
                     .viewedSwipeModifiers(episode: episode)
             }
         }
