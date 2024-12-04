@@ -24,7 +24,6 @@ struct RatingView: View {
                     onImage
                         .foregroundColor(number > rating ? offColor : onColor)
                 }
-
             }
         }
     }

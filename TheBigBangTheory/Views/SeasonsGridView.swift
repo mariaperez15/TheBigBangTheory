@@ -30,7 +30,6 @@ struct SeasonsGridView: View {
                 case .season:
                     seasonsGrid
                 }
-                //TODO: ContentUnavailableView utilizarlo para que cuando no encuentre nada que coincida con la busqueda
             }
             .searchable(text: $vm.searchedText , prompt: "Search episode by title")
             .onChange(of: vm.searchedText) {

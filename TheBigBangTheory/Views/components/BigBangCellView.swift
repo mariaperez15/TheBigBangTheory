@@ -23,8 +23,8 @@ struct BigBangCellView: View {
                     .foregroundColor(.secondary)
                 
                 HStack(spacing: 16) {
-                    iconsApp(isActive: episode.isFavorite, imageActive: "star.fill", imageInactive: "star", colorActivate: .yellow, colorInactive: .gray)
-                    iconsApp(isActive: episode.isViewed, imageActive: "eye.fill", imageInactive: "eye.slash.fill", colorActivate: .blue, colorInactive: .gray)
+                    ImageIconComponent(isActive: episode.isFavorite, imageActive: "star.fill", imageInactive: "star", colorActive: .yellow, colorInactive: .gray)
+                    ImageIconComponent(isActive: episode.isViewed, imageActive: "eye.fill", imageInactive: "eye.slash.fill", colorActive: .blue, colorInactive: .gray)
                 }
             }
             
@@ -36,17 +36,6 @@ struct BigBangCellView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .shadow(radius: 3, y: 3)
         }
-    }
-    
-    func iconsApp(isActive: Bool, imageActive: String, imageInactive: String, colorActivate: Color, colorInactive: Color) -> some View {
-        Image(systemName: isActive ? imageActive : imageInactive)
-            .foregroundColor(isActive ? colorActivate : colorInactive)
-            .frame(width: 32, height: 32)
-            .background(
-                Circle()
-                    .fill(Color(.systemGray6))
-                    .opacity(0.7)
-            )
     }
 }
 

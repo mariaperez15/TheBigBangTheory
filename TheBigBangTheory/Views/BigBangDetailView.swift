@@ -25,16 +25,14 @@ struct BigBangDetailView: View {
                         vm.markAsViewed(episode: episode)
                         episode.isViewed.toggle()
                     } label: {
-                        Image(systemName: episode.isViewed ? "eye.fill" : "eye.slash.fill")
-                            .foregroundStyle(episode.isViewed ? .blue : .gray)
+                        ImageIconComponent(isActive: episode.isViewed, imageActive: "eye.fill", imageInactive: "eye.slash.fill", colorActive: .blue, colorInactive: .gray)
                     }
                     .padding(.trailing, 200)
                     Button {
                         vm.markAsFavorite(episode: episode)
                         episode.isFavorite.toggle()
                     } label: {
-                        Image(systemName: episode.isFavorite ? "star.fill" : "star")
-                            .foregroundColor(episode.isFavorite ? .yellow : .gray)
+                        ImageIconComponent(isActive: episode.isFavorite, imageActive: "star.fill", imageInactive: "star", colorActive: .yellow, colorInactive: .gray)
                     }
                 }
                 
