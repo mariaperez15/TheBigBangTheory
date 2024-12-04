@@ -20,6 +20,16 @@ struct EpisodesbySeasonView: View {
             .viewedSwipeModifiers(episode: episode)
         }
         .navigationTitle("Season \(selectedSeason)")
+        .toolbar {
+            ToolbarItem {
+                Button {
+                    vm.markSeasonAsViewed(seasonNumber: selectedSeason)
+                } label: {
+                    Image(systemName: "eye")
+                }
+
+            }
+        }
     }
 }
 

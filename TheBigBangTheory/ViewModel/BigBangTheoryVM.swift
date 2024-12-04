@@ -26,6 +26,7 @@ final class BigBangTheoryVM: ObservableObject {
     @Published var searchedText: String = ""
     @Published var searchedEpisodes: [BigBangTheoryModel] = []
     @Published var firstView: FirstView = .loading
+    //@Published var episodeRate = 0
     
     var searchedResults: [BigBangTheoryModel] {
         episodes.filter { episode in
@@ -107,9 +108,38 @@ final class BigBangTheoryVM: ObservableObject {
         }
     }
     
+    func markSeasonAsViewed(seasonNumber: Int) {
+        for (index, episode) in episodes.enumerated() {
+            if episode.season == seasonNumber {
+                episodes[index].isViewed.toggle()
+            }
+        }
+        
+        /*
+         let letters = ["a", "b", "c"]
+         for (index, letter) in letters.enumerated() {
+             print("Índice: \(index), Letra: \(letter)")
+         }
+         */
+    }
+    
+    func saveComment(episode: BigBangTheoryModel, userNote: String) {
+        if let indexEpisode = episodes.firstIndex(where: { chapter in
+            chapter.id == episode.id }) {
+            episodes[indexEpisode].episodeNotes = userNote
+        }
+    }
+    
     func searchEpisodeByName() {
         searchedEpisodes = episodes.filter { $0.name.localizedStandardContains(searchedText)}
         firstView = searchedText.isEmpty ? .season : .episodes
+    }
+    
+    func rateEpisode(episode: BigBangTheoryModel, episodeRate: Int) {
+        if let indexEpisode = episodes.firstIndex(where: { chapter  in
+            chapter.id == episode.id }) {
+            episodes[indexEpisode].rating = episodeRate
+        }
     }
 }
 

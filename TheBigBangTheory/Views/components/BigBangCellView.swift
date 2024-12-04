@@ -24,8 +24,13 @@ struct BigBangCellView: View {
                 .resizable() //esto incluso si no hace falta porque la imagen ya viene con el tamaño que necesitamos, hace falta?
                 .scaledToFit()
                 .frame(width: 150)
-            Image(systemName: episode.isFavorite ? "star.fill" : "star")
-                .foregroundStyle(episode.isFavorite ? .yellow : .gray)
+            VStack {
+                Image(systemName: episode.isFavorite ? "star.fill" : "star")
+                    .foregroundStyle(episode.isFavorite ? .yellow : .gray)
+                    .padding(.bottom)
+                Image(systemName: episode.isViewed ? "eye.fill" : "eye.slash.fill")
+                    .foregroundStyle(episode.isViewed ? .blue : .gray)
+            }
         }
     }
 }

@@ -19,4 +19,6 @@ struct BigBangTheoryModel: Codable, Identifiable, Hashable {
     let summary: String
     var isFavorite: Bool
     var isViewed: Bool
+    var episodeNotes: String
+    var rating: Int
 }

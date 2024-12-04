@@ -30,7 +30,9 @@ struct BigBangTheoryModelDTO: Codable, Identifiable, Hashable {
             image: image,
             summary: summary,
             isFavorite: false,
-            isViewed: false
+            isViewed: false,
+            episodeNotes: "",
+            rating: 0
         )
     }
 }

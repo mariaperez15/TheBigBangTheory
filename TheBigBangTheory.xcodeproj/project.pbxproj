@@ -30,6 +30,7 @@
 		FCC4BBED2CFB2020002A4257 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBEC2CFB2020002A4257 /* PreviewData.swift */; };
 		FCC4BBEF2CFB419D002A4257 /* EpisodesFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBEE2CFB419D002A4257 /* EpisodesFavoritesView.swift */; };
 		FCC4BBF22CFB4AD3002A4257 /* FavoritesSwipeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BBF12CFB4AD3002A4257 /* FavoritesSwipeModifier.swift */; };
+		FCF56D282D00C07000255E87 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF56D272D00C06F00255E87 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		FCC4BBEC2CFB2020002A4257 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		FCC4BBEE2CFB419D002A4257 /* EpisodesFavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesFavoritesView.swift; sourceTree = "<group>"; };
 		FCC4BBF12CFB4AD3002A4257 /* FavoritesSwipeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSwipeModifier.swift; sourceTree = "<group>"; };
+		FCF56D272D00C06F00255E87 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				FCAD44FA2CEDDD98001599A7 /* BigBangCellView.swift */,
 				FCC305492CFBC83600821AEF /* FavoritesCellView.swift */,
 				FCB10F532CFFAF9A00BD7AE0 /* ViewedCellView.swift */,
+				FCF56D272D00C06F00255E87 /* RatingView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				FCC3054A2CFBC83600821AEF /* FavoritesCellView.swift in Sources */,
 				FCAD44F92CED5026001599A7 /* BigBangTheoryVM.swift in Sources */,
 				FCC4BBE32CF7BC36002A4257 /* BigBangTheoryModel.swift in Sources */,
+				FCF56D282D00C07000255E87 /* RatingView.swift in Sources */,
 				FCC4BB9A2CF1E2CF002A4257 /* SwiftUIView.swift in Sources */,
 				FCB10F522CFFABF000BD7AE0 /* ViewedEpisodesView.swift in Sources */,
 				FCB10F502CFFA9FC00BD7AE0 /* ViewedSwipeModifier.swift in Sources */,
